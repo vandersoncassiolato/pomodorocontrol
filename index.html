@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title id="title_pomo">Pomodoro Control</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+       <div class="logo">
+        POMODORO <span id="verde">CONTROL</span>
+       </div> 
+        <ul class="menu">
+           <li id='about1'>About</li>
+           <li><a class="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUBTUQ27BXTPQ&source=url" target="blank">Donate</a></li>
+           <li class="settings">Settings</li>    
+       </ul>
+
+    <audio src="sound1.mpeg" id="audio1"></audio>
+    <audio src="sound2.mpeg" id="audio2"></audio>
+    <audio src="sound3.mpeg" id="audio3"></audio>
+    <audio src="sound4.mpeg" id="audio4"></audio>
+    
+    </div>
+    <div class="video">
+        <img src="Pomodoro.png">
+    </div>
+    <div class="cronometro">
+        <button onclick=pomodoro(); class="botao" id="pomodoro">Pomodoro</button>
+        <button onclick=shortbreak(); class="botao" id="short">Short Break</button>
+        <button onclick=longbreak(); class="botao" id="long">Long Break</button>
+        <h1 id="counter">25:00</h1>
+        <button onclick=start(); class="botao" id="start">Start</button>
+        <button onclick=stop(); class="botao" id="stop">Pause</button>
+        <button onclick=reset1(); class="botao" id="reset">Reset</button>
+        <br><input id="autostart" type="checkbox" value="check"> Auto start pomodoros and breaks
+    </div>
+
+    <div class="tasks">
+        <h1 id="tasks">Tasks</h1>
+        <form action='#'>
+        <input class="todastasks" id="task01" name="task01" type="text" placeholder="Tasks 01">
+        <input id="check_01" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task02" name="task02" type="text" placeholder="Tasks 02">
+        <input id="check_02" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task03" name="task03" type="text" placeholder="Tasks 03">
+        <input id="check_03" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task04" name="task04" type="text" placeholder="Tasks 04">
+        <input id="check_04" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task05" name="task05" type="text" placeholder="Tasks 05">
+        <input id="check_05" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task06" name="task06" type="text" placeholder="Tasks 06">
+        <input id="check_06" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task07" name="task07" type="text" placeholder="Tasks 07">
+        <input id="check_07" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task08" name="task08" type="text" placeholder="Tasks 08">
+        <input id="check_08" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task09" name="task09" type="text" placeholder="Tasks 09">
+        <input id="check_09" type="checkbox" value="check"> 
+        <br><input class="todastasks" id="task10" name="task10" type="text" placeholder="Tasks 10">
+        <input id="check_010" type="checkbox" value="check"><br> 
+        <br><button id="resettasks" type="reset">Reset</button>     
+        </form>
+
+    </div>
+    <div class="about">
+        <a href="#" id="foo"></a>
+        <p id="titulo">Pomodoro Technique</p>
+            
+            <p>Created in the 80's by the Italian Francesco Cirillo, the Pomodoro technique is widely used by those who need and like to manage time, 
+                in order to better organize their activities and increase their efficiency and productivity. This method consists of dividing tasks and 
+                activities into blocks of 25 minutes of uninterrupted time (without any pauses or distractions at all!), making the person create an 
+                increase in concentration, focus and agility in the execution of pendencies. After the block is closed, there is an interval of 5 minutes 
+                (short break) or 10 minutes (long break).</p>
+            <br>
+           <p>To “oxygenate the brain” and increase its efficiency, after 4 consecutive “pomodoros”, an interval of 15 to 30 minutes should be performed.
+
+        </p>
+        <br>
+            <p>Tip:</p>
+                <p>1.	Select an activity of your choice;</p>
+                <p>2.	Dedicate yourself to this activity for 25 minutes without stopping;</p>
+                <p>3.	Take a 5-minute break;</p>
+                <p>4.	Start another “pomodoro” (25-minute block + 5-minute break);</p>
+                <p> 5.	After 4 "pomodoros" in a row, perform an interval greater than 15 to 30 minutes;</p>
+                <p> 6.	Start another “pomodoro” cycle until the selected activities are over.</p>
+            <br>
+          <p>  *This is the standard technique suggested by the classic method, however you can adjust the times according to your understanding and ideal balance (use the <i>Settings</i> tab to adjust).</p>
+        </p>
+        </div>
+        <footer>
+            Copyright © 2020 Colizzeu WebDev - All rights reserved. 
+        </footer>
+        <!–-  Html do popup do setting -->
+        <div id="modal-settings" class="modal-container">
+            <div id="modal-master" class="modal">
+                <button id="fechar" class="fechar">x</button>
+                <div class="modalmais">
+                <h3 id="fontesettings"> Settings</h3>
+                <form id='sounds'>
+                    <h3>Select Sound</h3>
+                    <input type="radio" class="input" name="a1" value="a" id="sound1"> Sound 01
+                    <input type="radio" class="input" name="a1" value="b" id="sound2"> Sound 02
+                    <input type="radio" class="input" name="a1" value="c" id="sound3"> Sound 03
+                    <input type="radio" class="input" name="a1" value="d" id="sound4"> Sound 04
+                </form>   
+
+                <form id='volumes'>
+                    <h3>Select Volume</h3>
+                    <input type="radio" class="input" name="a2" value=0 id="mute"> Mute
+                    <input type="radio" class="input" name="a2" value=0.25 id="vol025"> 25%
+                    <input type="radio" class="input" name="a2" value=0.5 id="vol050"> 50%
+                    <input type="radio" class="input" name="a2" value=0.75 id="vol075"> 75%
+                    <input type="radio" class="input" name="a2" value=1 id="vol100"> 100%<br>
+                    <br><input type="button" class="button" value="Test Sound" id="test_sound">
+                </form>
+                <br>
+                         <form>
+                    <h3>Set Custom Times</h3>
+                        Pomodoro (in minutes)
+                        <br><input id="input1" type="number" class="input"><br>
+                        <br>Short Break (in minutes)
+                        <br><input id="input2" type="number" class="input"><br>
+                        <br>Long Break (in minutes)   
+                        <br><input id="input3" type="number" class="input">
+                 
+                </form>
+                
+                <div class="botoesmodal">
+                <input id="botao1" type="button" class="button" value="Save">
+                <input id="botao2" type="reset" class="button" value="Reset">
+        
+            </div>    
+            </div>
+            </div>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>

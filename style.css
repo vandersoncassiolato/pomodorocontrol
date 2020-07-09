@@ -1,0 +1,385 @@
+body {
+    background-color: #E4E4E4;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    background:#f8acac;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer
+}
+
+li{
+    float: left;
+    color: white;
+    margin-left: 15px;
+    background-color: #4D4D4D;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px ;
+}
+
+strong{
+    padding: 10px;
+}
+
+li:hover{
+    background-color: rgb(158, 154, 154);
+    }
+
+
+
+.logo{
+    float: left;
+    color: rgb(216, 0, 0);
+    padding: 10px;
+    font-family: 'MinhaFonte';
+    font-size: 35px;
+    font-stretch: extra-expanded;
+}
+
+.video{
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #e4e4e4;
+    padding: 15px;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-top: 60px;
+    text-align: center;
+    
+
+}
+
+.cronometro{
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #f8acac;
+    padding: 15px;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #bc2035;
+    margin-bottom: 40px;
+}
+
+#autostart{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tasks{
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    height: 100%px;
+    background: #f8acac;
+    padding: 15px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #bc2035;
+    margin-bottom: 40px;
+}
+
+#tasks{
+    font-size: 20px;
+}
+
+.todastasks{
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 95%;
+    box-sizing: border-box;
+    border: 1px solid  black;
+}
+
+#resettasks{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}       
+
+.botao{
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.about{
+    overflow: hidden;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background: #e4e4e4;
+    padding: 15px;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color:#154731;
+    margin-bottom: 20px;
+
+}
+ 
+h1{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #154731;
+    font-family: "MinhaFonte";
+    font-weight: 10;
+}
+
+@font-face {
+font-family: MinhaFonte;
+src: url(./fonts/FredokaOne-Regular.ttf)
+
+}
+
+@font-face {
+    font-family: MinhaFonte2;
+    src: url(./fonts/Signika-Regular.ttf)
+    }
+
+    @font-face {
+        font-family: MinhaFonte3;
+        src: url(./fonts/Signika-Light.ttf)
+        }
+
+#verde{
+    color: #154731;
+}
+
+#start{
+    background-color: #154731;
+    color: white;
+}
+
+#start:hover{
+    background-color: #237551;
+    color: white;
+}
+
+#stop{
+    background-color: rgb(216, 0, 0);
+    color: white;
+ }
+
+ #stop:hover{
+    background-color: rgb(241, 67, 67);
+    color: white;
+ }
+
+
+ #reset{
+    background-color: rgb(128, 126, 126);
+    color: white;
+ }
+
+ #reset:hover{
+    background-color: rgb(177, 177, 177);
+    color: white;
+ }
+
+#pomodoro #short #long {
+    background-color: #e4e4e4;
+}
+
+#pomodoro:hover {
+    background-color: #c4c4c4;
+}
+
+#short:hover {
+    background-color: #c4c4c4;
+}
+
+#long:hover {
+    background-color: #c4c4c4;
+}
+
+#titulo{
+    font-weight: 900;
+}
+
+p{
+    text-align: justify;
+    margin: 0;
+    margin-left:65px;
+    margin-right: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+#fontesettings{
+    font-size: 30px;
+}
+
+.modal-container.mostrarmodal{
+    display: flex;
+
+}
+
+.botoesmodal{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+.modal{
+    margin: 0;
+    background: #e4e4e4;
+    width: 30%;
+    min-width: 300px;
+    padding: 5px;
+    border: 3px solid black;
+    box-shadow: 0 0 0 10px #e4e4e4;
+    position: relative;
+}
+
+#botao1 { 
+    width: 100px;
+    height: 30px;
+
+}
+
+#botao2 { 
+    width: 100px;
+    height: 30px;
+
+}
+
+#input1{
+    width: 150px;
+}
+
+#input2{
+    width: 150px;
+}
+
+#input3{
+    width: 150px;
+}
+
+
+.modalmais{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrarmodal .modal {
+    animation: modal .3s;
+} 
+
+.fechar{
+    position: absolute;
+    font-size: 1.2em;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: white;
+    background: black;
+    font-family: "MinhaFonte";
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+
+footer{
+    background: #f8acac;
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.todastasks:disabled{
+    background: rgba(177, 177, 177, .7);
+}
+
+.donate{
+    color: white;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width:820px){
+
+    .header{
+        margin: auto;
+        text-align: center;
+    }
+
+    .botao{
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .todastasks{
+        width: 85%;
+    }
+
+    .menu{
+        margin-left: 25px;
+        float: left;
+    }
+}
