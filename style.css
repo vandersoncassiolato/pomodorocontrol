@@ -156,15 +156,9 @@ h1{
     margin-top: 10px;
     margin-bottom: 10px;
     color: #154731;
-    font-family: "MinhaFonte", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 10;
 }
-
-/*@font-face {
-font-family: MinhaFonte;
-src: url(FredokaOne-Regular.ttf);
-
-}*/
 
 #verde{
     color: #154731;
