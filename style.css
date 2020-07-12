@@ -48,7 +48,7 @@ li:hover{
     float: left;
     color: rgb(216, 0, 0);
     padding: 10px;
-    font-family: 'MinhaFonte', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 35px;
     font-stretch: extra-expanded;
 }
@@ -160,11 +160,11 @@ h1{
     font-weight: 10;
 }
 
-@font-face {
+/*@font-face {
 font-family: MinhaFonte;
 src: url(FredokaOne-Regular.ttf);
 
-}
+}*/
 
 #verde{
     color: #154731;
