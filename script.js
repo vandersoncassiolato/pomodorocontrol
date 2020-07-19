@@ -1,32 +1,50 @@
-let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+//let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 const pomodoro_button = document.getElementById('pomodoro')
-pomodoro_button.addEventListener(touchEvent, function(){
+pomodoro_button.addEventListener('click', function(){
+    pomodoro()
+})
+pomodoro_button.addEventListener('touchstart', function(){
     pomodoro()
 })
 
 const shortbreak_button = document.getElementById('short')
-shortbreak_button.addEventListener(touchEvent, function(){
+shortbreak_button.addEventListener('click', function(){
+    shortbreak()
+})
+shortbreak_button.addEventListener('touchstart', function(){
     shortbreak()
 })
 
 const longbreak_button = document.getElementById('long')
-longbreak_button.addEventListener(touchEvent, function(){
+longbreak_button.addEventListener('click', function(){
+    longbreak()
+})
+longbreak_button.addEventListener('touchstart', function(){
     longbreak()
 })
 
 const start_button = document.getElementById('start')
-start_button.addEventListener(touchEvent, function(){
+start_button.addEventListener('click', function(){
+    start()
+})
+start_button.addEventListener('touchstart', function(){
     start()
 })
 
 const stop_button = document.getElementById('stop')
-stop_button.addEventListener(touchEvent, function(){
+stop_button.addEventListener('click', function(){
+    stop()
+})
+stop_button.addEventListener('touchstart', function(){
     stop()
 })
 
 const reset1_button = document.getElementById('reset')
-reset1_button.addEventListener(touchEvent, function(){
+reset1_button.addEventListener('click', function(){
+    reset1()
+})
+reset1_button.addEventListener('touchstart', function(){
     reset1()
 })
 
@@ -80,14 +98,26 @@ function calc_time() {
 
 //Botão para salvar o settings do tempo 
 const button_1 = document.getElementById('botao1')
-button_1.addEventListener(touchEvent, function () {
+button_1.addEventListener('click', function () {
+    calc_time()
+    document.getElementById('fechar').click() = true
+})
+button_1.addEventListener('touchstart', function () {
     calc_time()
     document.getElementById('fechar').click() = true
 })
 
 //Botão para reset do tempo
 const button_3 = document.getElementById('botao2')
-button_3.addEventListener(touchEvent, function() {
+button_3.addEventListener('click', function() {
+    document.getElementById('input1').value = 0;
+    document.getElementById('input2').value = 0;
+    document.getElementById('input3').value = 0;
+    calc_time()
+    document.getElementById('sounds').reset();
+    document.getElementById('volumes').reset();
+})
+button_3.addEventListener('touchstart', function() {
     document.getElementById('input1').value = 0;
     document.getElementById('input2').value = 0;
     document.getElementById('input3').value = 0;
@@ -246,7 +276,12 @@ function timer() {
 function iniciaModal(modalID) {
     const modal = document.getElementById(modalID);
     modal.classList.add('mostrarmodal');
-    modal.addEventListener(touchEvent, (e) => {
+    modal.addEventListener('click', (e) => {
+        if(e.target.className == 'fechar') {
+            modal.classList.remove('mostrarmodal');
+        }
+    });
+    modal.addEventListener('touchstart', (e) => {
         if(e.target.className == 'fechar') {
             modal.classList.remove('mostrarmodal');
         }
@@ -254,102 +289,185 @@ function iniciaModal(modalID) {
     }
 
     const settings = document.querySelector('.settings');
-    settings.addEventListener(touchEvent, () => iniciaModal('modal-settings'));
+    settings.addEventListener('click', () => iniciaModal('modal-settings'));
+    settings.addEventListener('touchstart', () => iniciaModal('modal-settings'));
 
 //Tasks check:
 const check01 = document.getElementById('check_01')
-check01.addEventListener(touchEvent, function () {
+check01.addEventListener('click', function () {
     if(document.getElementById('check_01').checked == true){
         document.getElementById('task01').disabled = true  
     } else {
         document.getElementById('task01').disabled = false
     }
 })
+check01.addEventListener('touchstart', function () {
+    if(document.getElementById('check_01').checked == true){
+        document.getElementById('task01').disabled = false  
+    } else {
+        document.getElementById('task01').disabled = true
+    }
+})
 
 const check02 = document.getElementById('check_02')
-check02.addEventListener(touchEvent, function () {
+check02.addEventListener('click', function () {
     if(document.getElementById('check_02').checked == true){
         document.getElementById('task02').disabled = true  
     } else {
         document.getElementById('task02').disabled = false
     }
 })
+check02.addEventListener('touchstart', function () {
+    if(document.getElementById('check_02').checked == true){
+        document.getElementById('task02').disabled = false  
+    } else {
+        document.getElementById('task02').disabled = true
+    }
+})
 
 const check03 = document.getElementById('check_03')
-check03.addEventListener(touchEvent, function () {
+check03.addEventListener('click', function () {
     if(document.getElementById('check_03').checked == true){
         document.getElementById('task03').disabled = true  
     } else {
         document.getElementById('task03').disabled = false
     }
 })
+check03.addEventListener('touchstart', function () {
+    if(document.getElementById('check_03').checked == true){
+        document.getElementById('task03').disabled = false  
+    } else {
+        document.getElementById('task03').disabled = true
+    }
+})
 
 const check04 = document.getElementById('check_04')
-check04.addEventListener(touchEvent, function () {
+check04.addEventListener('click', function () {
     if(document.getElementById('check_04').checked == true){
         document.getElementById('task04').disabled = true  
     } else {
         document.getElementById('task04').disabled = false
     }
 })
+check04.addEventListener('touchstart', function () {
+    if(document.getElementById('check_04').checked == true){
+        document.getElementById('task04').disabled = false  
+    } else {
+        document.getElementById('task04').disabled = true
+    }
+})
 
 const check05 = document.getElementById('check_05')
-check05.addEventListener(touchEvent, function () {
+check05.addEventListener('click', function () {
     if(document.getElementById('check_05').checked == true){
         document.getElementById('task05').disabled = true  
     } else {
         document.getElementById('task05').disabled = false
     }
 })
+check05.addEventListener('touchstart', function () {
+    if(document.getElementById('check_05').checked == true){
+        document.getElementById('task05').disabled = false  
+    } else {
+        document.getElementById('task05').disabled = true
+    }
+})
 
 const check06 = document.getElementById('check_06')
-check06.addEventListener(touchEvent, function () {
+check06.addEventListener('click', function () {
     if(document.getElementById('check_06').checked == true){
         document.getElementById('task06').disabled = true  
     } else {
         document.getElementById('task06').disabled = false
     }
 })
+check06.addEventListener('touchstart', function () {
+    if(document.getElementById('check_06').checked == true){
+        document.getElementById('task06').disabled = false  
+    } else {
+        document.getElementById('task06').disabled = true
+    }
+})
 
 const check07 = document.getElementById('check_07')
-check07.addEventListener(touchEvent, function () {
+check07.addEventListener('click', function () {
     if(document.getElementById('check_07').checked == true){
         document.getElementById('task07').disabled = true  
     } else {
         document.getElementById('task07').disabled = false
     }
 })
+check07.addEventListener('touchstart', function () {
+    if(document.getElementById('check_07').checked == true){
+        document.getElementById('task07').disabled = false  
+    } else {
+        document.getElementById('task07').disabled = true
+    }
+})
 
 const check08 = document.getElementById('check_08')
-check08.addEventListener(touchEvent, function () {
+check08.addEventListener('click', function () {
     if(document.getElementById('check_08').checked == true){
         document.getElementById('task08').disabled = true  
     } else {
         document.getElementById('task08').disabled = false
     }
 })
+check08.addEventListener('touchstart', function () {
+    if(document.getElementById('check_08').checked == true){
+        document.getElementById('task08').disabled = false  
+    } else {
+        document.getElementById('task08').disabled = true
+    }
+})
 
 const check09 = document.getElementById('check_09')
-check09.addEventListener(touchEvent, function () {
+check09.addEventListener('click', function () {
     if(document.getElementById('check_09').checked == true){
         document.getElementById('task09').disabled = true  
     } else {
         document.getElementById('task09').disabled = false
     }
 })
+check09.addEventListener('touchstart', function () {
+    if(document.getElementById('check_09').checked == true){
+        document.getElementById('task09').disabled = false  
+    } else {
+        document.getElementById('task09').disabled = true
+    }
+})
 
 const check010 = document.getElementById('check_010')
-check010.addEventListener(touchEvent, function () {
+check010.addEventListener('click', function () {
     if(document.getElementById('check_010').checked == true){
         document.getElementById('task10').disabled = true  
     } else {
         document.getElementById('task10').disabled = false
     }
 })
+check010.addEventListener('touchstart', function () {
+    if(document.getElementById('check_010').checked == true){
+        document.getElementById('task10').disabled = false  
+    } else {
+        document.getElementById('task10').disabled = true
+    }
+})
 
 //Destrava todos os campos após o reset do das tasks.
 const resetall = document.getElementById('resettasks')
-resetall.addEventListener(touchEvent, function() {
+resetall.addEventListener('click', function() {
+    document.getElementById('task01').disabled = false
+    document.getElementById('task02').disabled = false
+    document.getElementById('task03').disabled = false
+    document.getElementById('task04').disabled = false
+    document.getElementById('task05').disabled = false
+    document.getElementById('task06').disabled = false
+    document.getElementById('task07').disabled = false
+    document.getElementById('task08').disabled = false
+    document.getElementById('task09').disabled = false
+    document.getElementById('task10').disabled = false
+})
+resetall.addEventListener('touchstart', function() {
     document.getElementById('task01').disabled = false
     document.getElementById('task02').disabled = false
     document.getElementById('task03').disabled = false
@@ -409,12 +527,18 @@ function valida_settings(){
 
 //Botão para o test sound
 const button = document.getElementById('test_sound')
-button.addEventListener(touchEvent, function(){
+button.addEventListener('click', function(){
+    valida_settings()
+})
+button.addEventListener('touchstart', function(){
     valida_settings()
 })
 
 //Botão que vai para o about
 const button_2 = document.getElementById('about1')
-button_2.addEventListener(touchEvent, function() {
+button_2.addEventListener('click', function() {
+    window.location.href='#foo';
+})
+button_2.addEventListener('touchstart', function() {
     window.location.href='#foo';
 })
