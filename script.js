@@ -1,5 +1,3 @@
-"use strict"
-
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 const pomodoro_button = document.getElementById('pomodoro')
