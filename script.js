@@ -302,10 +302,14 @@ check01.addEventListener('click', function () {
     }
 })
 check01.addEventListener('touchend', function () {
-    if(document.getElementById('check_01').checked == true){
-        document.getElementById('task01').disabled = true  
-    } else {
-        document.getElementById('task01').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_01').checked == true){
+            document.getElementById('task01').disabled = true  
+        } else {
+            document.getElementById('task01').disabled = false
+        }
     }
 })
 
@@ -318,10 +322,14 @@ check02.addEventListener('click', function () {
     }
 })
 check02.addEventListener('touchend', function () {
-    if(document.getElementById('check_02').checked == true){
-        document.getElementById('task02').disabled = true  
-    } else {
-        document.getElementById('task02').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_02').checked == true){
+            document.getElementById('task02').disabled = true  
+        } else {
+            document.getElementById('task02').disabled = false
+        }
     }
 })
 
@@ -334,10 +342,14 @@ check03.addEventListener('click', function () {
     }
 })
 check03.addEventListener('touchend', function () {
-    if(document.getElementById('check_03').checked == true){
-        document.getElementById('task03').disabled = true  
-    } else {
-        document.getElementById('task03').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_03').checked == true){
+            document.getElementById('task03').disabled = true  
+        } else {
+            document.getElementById('task03').disabled = false
+        }
     }
 })
 
@@ -350,10 +362,14 @@ check04.addEventListener('click', function () {
     }
 })
 check04.addEventListener('touchend', function () {
-    if(document.getElementById('check_04').checked == true){
-        document.getElementById('task04').disabled = true  
-    } else {
-        document.getElementById('task04').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_04').checked == true){
+            document.getElementById('task04').disabled = true  
+        } else {
+            document.getElementById('task04').disabled = false
+        }
     }
 })
 
@@ -366,10 +382,14 @@ check05.addEventListener('click', function () {
     }
 })
 check05.addEventListener('touchend', function () {
-    if(document.getElementById('check_05').checked == true){
-        document.getElementById('task05').disabled = true 
-    } else {
-        document.getElementById('task05').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_05').checked == true){
+            document.getElementById('task05').disabled = true 
+        } else {
+            document.getElementById('task05').disabled = false
+        }
     }
 })
 
@@ -382,10 +402,14 @@ check06.addEventListener('click', function () {
     }
 })
 check06.addEventListener('touchend', function () {
-    if(document.getElementById('check_06').checked == true){
-        document.getElementById('task06').disabled = true 
-    } else {
-        document.getElementById('task06').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_06').checked == true){
+            document.getElementById('task06').disabled = true 
+        } else {
+            document.getElementById('task06').disabled = false
+        }
     }
 })
 
@@ -398,10 +422,14 @@ check07.addEventListener('click', function () {
     }
 })
 check07.addEventListener('touchend', function () {
-    if(document.getElementById('check_07').checked == true){
-        document.getElementById('task07').disabled = true  
-    } else {
-        document.getElementById('task07').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_07').checked == true){
+            document.getElementById('task07').disabled = true  
+        } else {
+            document.getElementById('task07').disabled = false
+        }
     }
 })
 
@@ -414,10 +442,14 @@ check08.addEventListener('click', function () {
     }
 })
 check08.addEventListener('touchend', function () {
-    if(document.getElementById('check_08').checked == true){
-        document.getElementById('task08').disabled = true  
-    } else {
-        document.getElementById('task08').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_08').checked == true){
+            document.getElementById('task08').disabled = true  
+        } else {
+            document.getElementById('task08').disabled = false
+        }
     }
 })
 
@@ -430,10 +462,14 @@ check09.addEventListener('click', function () {
     }
 })
 check09.addEventListener('touchend', function () {
-    if(document.getElementById('check_09').checked == true){
-        document.getElementById('task09').disabled = true  
-    } else {
-        document.getElementById('task09').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_09').checked == true){
+            document.getElementById('task09').disabled = true  
+        } else {
+            document.getElementById('task09').disabled = false
+        }
     }
 })
 
@@ -446,10 +482,14 @@ check010.addEventListener('click', function () {
     }
 })
 check010.addEventListener('touchend', function () {
-    if(document.getElementById('check_010').checked == true){
-        document.getElementById('task10').disabled = true 
-    } else {
-        document.getElementById('task10').disabled = false
+    setTimeout(() => {(validation());}, 100)
+
+    function validation() {
+        if(document.getElementById('check_010').checked == true){
+            document.getElementById('task10').disabled = true 
+        } else {
+            document.getElementById('task10').disabled = false
+        }
     }
 })
 
