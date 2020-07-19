@@ -301,11 +301,11 @@ check01.addEventListener('click', function () {
         document.getElementById('task01').disabled = false
     }
 })
-check01.addEventListener('touchstart', function () {
+check01.addEventListener('touchend', function () {
     if(document.getElementById('check_01').checked == true){
-        document.getElementById('task01').disabled = false  
+        document.getElementById('task01').disabled = true  
     } else {
-        document.getElementById('task01').disabled = true
+        document.getElementById('task01').disabled = false
     }
 })
 
@@ -317,11 +317,11 @@ check02.addEventListener('click', function () {
         document.getElementById('task02').disabled = false
     }
 })
-check02.addEventListener('touchstart', function () {
+check02.addEventListener('touchend', function () {
     if(document.getElementById('check_02').checked == true){
-        document.getElementById('task02').disabled = false  
+        document.getElementById('task02').disabled = true  
     } else {
-        document.getElementById('task02').disabled = true
+        document.getElementById('task02').disabled = false
     }
 })
 
@@ -333,11 +333,11 @@ check03.addEventListener('click', function () {
         document.getElementById('task03').disabled = false
     }
 })
-check03.addEventListener('touchstart', function () {
+check03.addEventListener('touchend', function () {
     if(document.getElementById('check_03').checked == true){
-        document.getElementById('task03').disabled = false  
+        document.getElementById('task03').disabled = true  
     } else {
-        document.getElementById('task03').disabled = true
+        document.getElementById('task03').disabled = false
     }
 })
 
@@ -349,11 +349,11 @@ check04.addEventListener('click', function () {
         document.getElementById('task04').disabled = false
     }
 })
-check04.addEventListener('touchstart', function () {
+check04.addEventListener('touchend', function () {
     if(document.getElementById('check_04').checked == true){
-        document.getElementById('task04').disabled = false  
+        document.getElementById('task04').disabled = true  
     } else {
-        document.getElementById('task04').disabled = true
+        document.getElementById('task04').disabled = false
     }
 })
 
@@ -365,11 +365,11 @@ check05.addEventListener('click', function () {
         document.getElementById('task05').disabled = false
     }
 })
-check05.addEventListener('touchstart', function () {
+check05.addEventListener('touchend', function () {
     if(document.getElementById('check_05').checked == true){
-        document.getElementById('task05').disabled = false  
+        document.getElementById('task05').disabled = true 
     } else {
-        document.getElementById('task05').disabled = true
+        document.getElementById('task05').disabled = false
     }
 })
 
@@ -381,11 +381,11 @@ check06.addEventListener('click', function () {
         document.getElementById('task06').disabled = false
     }
 })
-check06.addEventListener('touchstart', function () {
+check06.addEventListener('touchend', function () {
     if(document.getElementById('check_06').checked == true){
-        document.getElementById('task06').disabled = false  
+        document.getElementById('task06').disabled = true 
     } else {
-        document.getElementById('task06').disabled = true
+        document.getElementById('task06').disabled = false
     }
 })
 
@@ -397,11 +397,11 @@ check07.addEventListener('click', function () {
         document.getElementById('task07').disabled = false
     }
 })
-check07.addEventListener('touchstart', function () {
+check07.addEventListener('touchend', function () {
     if(document.getElementById('check_07').checked == true){
-        document.getElementById('task07').disabled = false  
+        document.getElementById('task07').disabled = true  
     } else {
-        document.getElementById('task07').disabled = true
+        document.getElementById('task07').disabled = false
     }
 })
 
@@ -413,11 +413,11 @@ check08.addEventListener('click', function () {
         document.getElementById('task08').disabled = false
     }
 })
-check08.addEventListener('touchstart', function () {
+check08.addEventListener('touchend', function () {
     if(document.getElementById('check_08').checked == true){
-        document.getElementById('task08').disabled = false  
+        document.getElementById('task08').disabled = true  
     } else {
-        document.getElementById('task08').disabled = true
+        document.getElementById('task08').disabled = false
     }
 })
 
@@ -429,11 +429,11 @@ check09.addEventListener('click', function () {
         document.getElementById('task09').disabled = false
     }
 })
-check09.addEventListener('touchstart', function () {
+check09.addEventListener('touchend', function () {
     if(document.getElementById('check_09').checked == true){
-        document.getElementById('task09').disabled = false  
+        document.getElementById('task09').disabled = true  
     } else {
-        document.getElementById('task09').disabled = true
+        document.getElementById('task09').disabled = false
     }
 })
 
@@ -445,11 +445,11 @@ check010.addEventListener('click', function () {
         document.getElementById('task10').disabled = false
     }
 })
-check010.addEventListener('touchstart', function () {
+check010.addEventListener('touchend', function () {
     if(document.getElementById('check_010').checked == true){
-        document.getElementById('task10').disabled = false  
+        document.getElementById('task10').disabled = true 
     } else {
-        document.getElementById('task10').disabled = true
+        document.getElementById('task10').disabled = false
     }
 })
 
