@@ -217,7 +217,7 @@ src: url(FredokaOne-Regular.ttf);
     background-color: #c4c4c4;
 }
 
-#titulo{
+.titulo{
     font-weight: 900;
 }
 
@@ -353,6 +353,9 @@ footer{
 .donate{
     color: white;
     text-decoration: none;
+
+}
+
 
 }
 
